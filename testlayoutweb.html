@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #wholepage {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100vh;
+            width: 100%;
+        }
+        #header{
+            flex-grow: 1;
+            background-color: #A4343A;
+            padding: 5px;
+            margin: 5px;
+        }
+        #navigation{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-grow: 1;
+        }
+        #nav1, #nav2, #nav3, #nav4{
+            background-color: #B0B7B9;
+            flex-grow: 1;
+            width: 70px;
+            margin: 5px;
+        }
+        #content{
+            display :flex;
+            flex-direction: row;
+            flex-grow: 5;
+            margin: 5px;
+        }
+        #sidebarLeft{
+            background-color: #5BC2E7;
+            flex-grow: 1;
+            margin: 5px;
+        }
+        #sidebarRight{
+            background-color: #F395C7;
+            flex-grow: 1;
+            margin: 5px;
+        }
+        #contentCenter{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 3;
+            
+        }
+        #ContentCenterUp{
+            background-color: #9B26B6;
+            flex-grow: 1;
+            padding: 5px;
+            margin: 5px;
+        }
+        #ContentCenterDown{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+        #ContentCenterDown1{
+            background-color: #34A798;
+            flex-grow: 1;
+            padding: 5px;
+            margin: 5px;
+        }
+        #ContentCenterDown2{
+            background-color: #007A53;
+            flex-grow: 1;
+            padding: 5px;
+            margin: 5px;
+        }
+        #footer{
+            background-color: #D7C826;
+            flex-grow: 1;
+            padding: 5px;
+            margin: 5px;
+            
+        }
+        #header, #nav1, #nav2,#nav3,#nav4,#sidebarLeft,#ContentCenterUp,#ContentCenterDown1,#ContentCenterDown2, #sidebarRight, #footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+</style>
+<body>
+    <div id="wholepage">
+        <div id="header">HEADER</div>
+        <div id="navigation">
+            <div id="nav1">NAV1</div>
+            <div id="nav2">NAV2</div>
+            <div id="nav3">NAV3</div>
+            <div id="nav4">NAV4</div>
+        </div>
+        <div id="content">
+            <div id="sidebarLeft">SIDEBAR LEFT</div>
+            <div id="contentCenter">
+                <div id="ContentCenterUp">CONTENT CENTER UP</div>
+                <div id="ContentCenterDown">
+                    <div id="ContentCenterDown1">CONTENT CENTER DOWN 1</div>
+                    <div id="ContentCenterDown2">CONTENT CENTER DOWN 2</div>
+                </div>
+            </div>
+            <div id="sidebarRight">SIDEBAR RIGHT</div>
+        </div>
+        <div id="footer">FOOTER</div>
+    </div>
+</body>
+</html>
